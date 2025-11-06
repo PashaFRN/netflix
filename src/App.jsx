@@ -47,7 +47,9 @@ function App() {
           <MovieCard
   key={movie.name}            
   image= {movie.image} 
-  raiting={movie.raiting}/>
+  raiting={movie.raiting}
+  youTubeTrailer={movie.youTubeTrailer}
+  />
       )) : <p>Фильм не найден</p>
     }
     </main>
