@@ -1,6 +1,7 @@
 import { useState } from "react"
 import FavoriteButton from "./FavoriteButton"
 import { Modal } from "./components/ui/modals"
+import { Link } from "react-router-dom"
 
 export default function MovieCard ({image, raiting, youTubeTrailer}){
 
@@ -16,6 +17,11 @@ export default function MovieCard ({image, raiting, youTubeTrailer}){
             >
                 🎬
             </button>
+
+
+            <Link className="absolute bottom-2 right-2 z-10 transition-all bg-opacity-50 text-white px-1 py-1 rounded" to={`/movie/${youTubeTrailer}`}>
+            🛈
+            </Link>
 
             {/* Модальное окно */}
             {isOpenTrailer && (
