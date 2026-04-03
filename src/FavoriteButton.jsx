@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-export default function favoriteButton (){
+export default function FavoriteButton (){
 
     const [isFavorite, setIsFavorite] = useState(false)
 
